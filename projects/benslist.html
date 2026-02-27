@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben's List — Ben Imadali</title>
+  <meta name="description" content="Ben's List — An AI-powered restaurant recommendation chatbot, built from my personal list.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="back-link">← Back</a>
+    </header>
+
+    <main class="detail detail--terracotta">
+      <h1>Ben's List</h1>
+      <p class="subtitle">An AI-powered restaurant recommendation chatbot — <a href="https://benslist.food" target="_blank">benslist.food ↗</a></p>
+
+      <div class="prose">
+        <p>I kept a Google Maps list of every restaurant I loved. Hole-in-the-wall spots, neighborhood favorites, the places you only find by walking past them. The list kept growing.</p>
+
+        <p>Then people started asking. "Where should I eat in LA?" "What's good in SF?" Friends, friends of friends, coworkers — my phone turned into a restaurant hotline. Sometimes I wouldn't answer for days. Sometimes I'd forget. And I definitely didn't want to hand out my number to the whole world just so they could ask me where to eat.</p>
+
+        <p>So I built <a href="https://benslist.food" target="_blank">benslist.food</a> — an AI chatbot that knows my entire restaurant list. Ask it anything — "best tacos in LA", "dim sum in SF", "where to eat near Koreatown" — and it pulls from my curated picks.</p>
+
+        <div class="how-built">
+          <strong>How it's built:</strong> Next.js app hosted on Vercel. My restaurant list lives as a CSV (~260 places with tags, descriptions, and recommended dishes). When you ask a question, the full list gets loaded into context and GPT streams back a recommendation with Google Maps links. The chat UI uses Vercel's AI SDK for real-time streaming. There's even a donate button if you loved the rec.
+        </div>
+
+        <p>Still eating, still adding. Still removing the spots that fell off. The list is alive — and now anyone can search it.</p>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:ben@benimadali.com">Say Hello</a>
+    </footer>
+  </div>
+</body>
+</html>
