@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ben's List — Ben Imadali</title>
-  <meta name="description" content="Ben's List — An AI-powered restaurant recommendation chatbot, built from my personal list of 260 curated restaurants.">
+  <meta name="description"
+    content="Ben's List — An AI-powered restaurant recommendation chatbot, built from my personal list of 260 curated restaurants.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -20,12 +25,18 @@
     <main class="detail">
       <span class="number-label">#1</span>
       <h1>Ben's List</h1>
-      <p class="subtitle">An AI-powered restaurant recommendation chatbot — <a href="https://benslist.food" target="_blank">benslist.food ↗</a></p>
+      <p class="subtitle">A curated restaurant recommendation chatbot — <a href="https://benslist.food"
+          target="_blank">benslist.food ↗</a></p>
 
       <div class="prose">
-        <p>I kept a Google Maps list of every restaurant I loved. Hole-in-the-wall spots, neighborhood favorites, the places you only find by walking past them. The list kept growing.</p>
+        <p>I keep a list of my favorite restaurants from around the world. I've been collecting them for over a decade
+          using this <a href="https://chefben.substack.com/p/the-single-question-i-use-to-guide">methodology</a> , and
+          it's grown to over 260 restaurants.</p>
 
-        <p>Then people started asking. "Where should I eat in LA?" "What's good in SF?" Friends, friends of friends, coworkers — my phone turned into a restaurant hotline. Sometimes I wouldn't answer for days. So I built an AI chatbot that knows my entire restaurant list.</p>
+        <p>Friends, friends of friends, and coworkers always ask me "Where should I eat in LA?" "What's good in SF?". I
+          was handing out my google maps based list, but the experience was clunky. There was no filtering, and
+          generally no easy way to find what I was looking for. So I built an AI chatbot that knows my entire restaurant
+          list.</p>
       </div>
 
       <h4 class="section-heading">The Build</h4>
@@ -34,23 +45,27 @@
         <div class="milestone">
           <p class="milestone-label">Nov 2024</p>
           <h3>The chaotic first day</h3>
-          <p>Basic chat tool with a fancy UI. Spent too long on visual polish. Nuked everything, went minimal chat-only. Shipped something that actually worked.</p>
+          <p>Basic chat tool with a fancy UI. Spent too long on visual polish. Nuked everything, went minimal chat-only.
+            Shipped something that actually worked.</p>
         </div>
 
         <div class="milestone">
           <p class="milestone-label">Oct 2025</p>
           <h3>The comeback sprint</h3>
-          <p>9-month pause. Came back with streaming responses, Stripe donations, tried Google Maps integration. Over-engineered it, ripped the maps out.</p>
+          <p>9-month pause. Came back with streaming responses, Stripe donations, tried Google Maps integration.
+            Over-engineered it, ripped the maps out.</p>
         </div>
 
         <div class="milestone">
           <p class="milestone-label">Mar 2026</p>
           <h3>Two-stage pipeline</h3>
-          <p>Switched OpenAI → Claude. Built a Haiku-extracts-filters → code-filters-260-restaurants → Sonnet-recommends pipeline. 6-9x token reduction. Finally fast and cheap enough to scale.</p>
+          <p>Switched OpenAI → Claude. Built a Haiku-extracts-filters → code-filters-260-restaurants → Sonnet-recommends
+            pipeline. 6-9x token reduction. Finally fast and cheap enough to scale.</p>
         </div>
       </div>
 
-      <div class="how-built" style="margin-top: 0.8rem; border-left-color: transparent; background: transparent; padding-left: 0;">
+      <div class="how-built"
+        style="margin-top: 0.8rem; border-left-color: transparent; background: transparent; padding-left: 0;">
         <strong>Stack:</strong> Next.js · Vercel · Claude Haiku + Sonnet · 260 curated restaurants (CSV)
       </div>
     </main>
@@ -60,4 +75,5 @@
     </footer>
   </div>
 </body>
+
 </html>
