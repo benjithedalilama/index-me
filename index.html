@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ben Imadali</title>
-  <meta name="description" content="Ben Imadali — Builder, Forager, Tinkerer, Amateur Chef.">
-  <meta property="og:title" content="Ben Imadali">
-  <meta property="og:description" content="Builder. Forager. Tinkerer. Amateur Chef.">
+  <title>Ben Imadali — One App a Day</title>
+  <meta name="description" content="One App a Day — Not about speed. About what's possible to build in a day, and getting reps across varied problem spaces.">
+  <meta property="og:title" content="Ben Imadali — One App a Day">
+  <meta property="og:description" content="Not about speed. About what's possible to build in a day, and getting reps across varied problem spaces.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://benimadali.com">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ben Imadali — One App a Day">
+  <meta name="twitter:description" content="Not about speed. About what's possible to build in a day, and getting reps across varied problem spaces.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,35 +22,60 @@
   <div class="container">
     <header>
       <h1>Ben Imadali</h1>
-      <p class="tagline">Builder. Forager. Tinkerer. Amateur Chef.</p>
+      <p class="tagline">One App a Day</p>
+      <p class="challenge-intro">Not about speed. About what's possible to build in a day, and getting reps across varied problem spaces.</p>
     </header>
 
     <main>
-      <div class="projects">
-        <div class="project">
-          <h2><a href="/projects/benslist">Ben's List</a></h2>
-          <p>An AI-powered restaurant recommendation chatbot, built from my personal list.</p>
+      <div class="challenge">
+        <div class="challenge-card">
+          <div class="challenge-card-header">
+            <span class="number-label">#1</span>
+            <h2><a href="/projects/benslist">Ben's List</a></h2>
+          </div>
+          <p class="problem">Friends kept asking "where should I eat?" Phone became a restaurant hotline.</p>
+          <p class="build-hook">Started as a basic chat tool. Nuked the UI, went minimal. Two-stage LLM pipeline, 6-9x token reduction.</p>
+          <div class="challenge-card-meta">
+            <span>Claude Haiku + Sonnet</span>
+            <span>260 curated restaurants</span>
+          </div>
           <div class="project-links">
             <a href="https://benslist.food" target="_blank">benslist.food ↗</a>
-            <a href="/projects/benslist">Details →</a>
+            <a href="/projects/benslist">Full story →</a>
           </div>
         </div>
 
-        <div class="project">
-          <h2><a href="/projects/resaleagent">Resale Agency</a></h2>
-          <p>An AI agent that sells your stuff for you.</p>
+        <div class="challenge-card">
+          <div class="challenge-card-header">
+            <span class="number-label">#2</span>
+            <h2><a href="/projects/resaleagent">Resale Agency</a></h2>
+          </div>
+          <p class="problem">Selling stuff secondhand is painful. Flaky buyers, lowballers, ghosting.</p>
+          <p class="build-hook">198 commits in 7 days. Architecture pivoted 3 times. Started as a Craigslist posting tool, ended with managed email, AI negotiation, cloud browser automation.</p>
+          <div class="challenge-card-meta">
+            <span>Cloudflare Workers</span>
+            <span>198 commits</span>
+          </div>
           <div class="project-links">
             <a href="https://resaleagency.com" target="_blank">resaleagency.com ↗</a>
-            <a href="/projects/resaleagent">Details →</a>
+            <a href="/projects/resaleagent">Full story →</a>
           </div>
         </div>
 
-        <div class="project">
-          <h2><a href="/projects/eatwild">Eat Wild</a></h2>
-          <p>Sustainable wild food experiences, ocean conservation, and research.</p>
+        <div class="challenge-card">
+          <div class="challenge-card-header">
+            <span class="number-label">#3</span>
+            <h2><a href="/projects/mushy">Mushy</a></h2>
+          </div>
+          <p class="problem">No reliable way to safely identify mushrooms in the field. Misidentification can be fatal.</p>
+          <p class="build-hook">Built in one morning. 166-species database, 16-question flow, weighted trait matching, Socratic AI.</p>
+          <div class="challenge-card-meta">
+            <span>Expo / React Native</span>
+            <span>Built 9am–10am</span>
+          </div>
           <div class="project-links">
-            <a href="https://eat-wild.vercel.app" target="_blank">eat-wild.vercel.app ↗</a>
-            <a href="/projects/eatwild">Details →</a>
+            <span class="coming-soon">Coming soon</span>
+            <a href="/projects/mushy">Full story →</a>
           </div>
         </div>
       </div>

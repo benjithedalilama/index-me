@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mushy — Ben Imadali</title>
+  <meta name="description" content="Mushy — A mushroom identification app with a 166-species database, weighted trait matching, and Socratic AI.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="back-link">← Back</a>
+    </header>
+
+    <main class="detail">
+      <span class="number-label">#3</span>
+      <h1>Mushy</h1>
+      <p class="subtitle">A mushroom identification app for the field</p>
+
+      <div class="prose">
+        <p>There's no reliable way to safely identify mushrooms in the field. Field guides are dense, keying charts assume expert vocabulary, and photo-based AI apps give dangerously confident wrong answers. Misidentification isn't just embarrassing — it can be fatal.</p>
+
+        <p>Mushy takes a different approach. Instead of snapping a photo and trusting a black box, it walks you through a 16-question observation flow — cap shape, gill attachment, spore print color, habitat — and uses weighted trait matching against a 166-species database. A Socratic AI layer asks follow-up questions and challenges your assumptions, but never gives a definitive ID. Because with mushrooms, confidence kills.</p>
+      </div>
+
+      <h4 class="section-heading">The Build</h4>
+
+      <div class="timeline">
+        <div class="milestone">
+          <p class="milestone-label">9:01am</p>
+          <h3>First commit</h3>
+          <p>Monumental single commit. 166-species database, 16-question observation flow, swipe gestures, weighted matching with Delta E color comparison, Socratic AI feedback with offline fallback.</p>
+        </div>
+
+        <div class="milestone">
+          <p class="milestone-label">9:27am</p>
+          <h3>SDK compatibility</h3>
+          <p>Fixed typed routes and dependency versioning for Expo SDK 55. Branding and visual identity — earthy palette, cream splash screen.</p>
+        </div>
+
+        <div class="milestone">
+          <p class="milestone-label">10:02am</p>
+          <h3>UX refinement</h3>
+          <p>Snappy spring animations (critically damped), human-readable trait labels, journal detail view with GPS location capture.</p>
+        </div>
+      </div>
+
+      <div class="how-built">
+        <strong>Key decisions:</strong> Safety-first — deadly species shown at >20% match. Socratic method — never definitive IDs. Offline-first. Delta E color matching for perceptually accurate color comparison.
+      </div>
+
+      <div class="how-built" style="margin-top: 0.6rem; border-left-color: transparent; background: transparent; padding-left: 0;">
+        <strong>Stack:</strong> Expo / React Native · TypeScript · Claude API · SQLite
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:ben@benimadali.com">Say Hello</a>
+    </footer>
+  </div>
+</body>
+</html>
