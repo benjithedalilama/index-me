@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forage — Ben Imadali</title>
+  <meta name="description" content="Forage: a browser game exploring the woodland, creeks and kelp forests of an imagined ancient Marin coast.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body><div class="container">
+  <header><a href="/" class="back-link">← Back</a></header>
+  <main class="detail">
+    <span class="number-label">#2</span><h1>Forage</h1>
+    <p class="subtitle">A living woodland, in your browser — <a href="https://forage.benimadali.com">Play Forage →</a></p>
+    <div class="prose">
+      <p>I wanted a place where you could slow down and notice things. A mushroom belongs to particular trees and seasons. A creek changes with the rain. A kelp forest depends on what eats the urchins.</p>
+      <p>Forage is a first-person ecological survival game set on an imagined stretch of the Marin coast about 3,000 years ago. Walk through oak woodland, gather materials, build a camp, fish the creek, and dive beneath the kelp. Weather, tides and wildlife make the same place feel different over time.</p>
+      <p>I built it with Claude and Codex, working through everything from procedural Blender models to animal behavior and underwater rendering. Much of the work has been observing what looks wrong, researching how it works, then testing it in the game.</p>
+    </div>
+    <h4 class="section-heading">The world</h4>
+    <div class="prose">
+      <p>The browser renders the woodland in Three.js. Terrain, vegetation, animals and water share the same landscape, while a small ecological model tracks the effects of gathering and hunting. The aim is a place that rewards attention.</p>
+      <p>This is a game and an evolving approximation, not a historical reconstruction or a real-world guide to foraging, medicine or wildlife encounters. Marin is an ancestral homeland of the Coast Miwok; the empty playable landscape does not imply that it was uninhabited.</p>
+    </div>
+    <div class="how-built"><strong>Stack:</strong> TypeScript · React · Three.js · Blender · Cloudflare Workers and D1 · Clerk</div>
+    <p style="margin-top:2rem"><a href="https://forage.benimadali.com">Enter the woodland →</a></p>
+  </main>
+  <footer><a href="mailto:me@benimadali.com">Say Hello</a></footer>
+</div></body></html>

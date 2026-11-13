@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/projects/resaleagent", "destination": "/projects/forage", "permanent": true },
+    { "source": "/projects/resaleagent.html", "destination": "/projects/forage", "permanent": true },
+    { "source": "/projects/sporadic", "destination": "/projects/forage", "permanent": true },
+    { "source": "/projects/sporadic.html", "destination": "/projects/forage", "permanent": true },
+    { "source": "/forage", "destination": "https://forage.benimadali.com", "permanent": true }
+  ]
 }
